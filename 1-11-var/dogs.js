@@ -11,7 +11,7 @@ window.onload = function () {
     function changeDog_3() {
         this.src = "003.jpg";
     }
-    var dog = document.getElementById("mydog");
+    var dog = document.getElementById("myDog");
     dog.onmouseover = changeDog_2;
     dog.onmouseout = changeDog_1;
     dog.onclick = changeDog_3;
