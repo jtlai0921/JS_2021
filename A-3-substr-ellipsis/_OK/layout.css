@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+    background-image: url(images/full-bloom.png);
+}
+
+#top {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(images/banner-3.jpg);
+    font-weight: normal;
+}
+
+#top h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 140px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: normal;
+}
+
+#top h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#center {
+    /*width:1200px;*/
+    width: 1020px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 80px 90px;
+    overflow: hidden;
+    /*破解：自動抓 #center 該有的高度*/
+    /*破解：當內層<div>使用 float 水平排列時*/
+    /*上層<div>若沒寫高度，就會消失不見的問題*/
+}
+
+#center .box {
+    width: 318px;
+    /* height: 560px; */
+    float: left;
+    /*內部全部的 <div class="box"> 都會水平排列（浮動）*/
+    margin-left: 30px;
+    /*內部全部的 <div class="box"> 都會有左間距*/
+    border: 1px solid #666;
+}
+
+#center .box:first-child {
+    /* :first-child 是 CSS3 的新功能 */
+    margin-left: 0px;
+    /* 可以指定被選取到的相同物件中的第一個物件 不要有左間距*/
+}
+
+#center h2 {
+    font-size: 20px;
+    line-height: 3;
+    /*設定文字的高度，又可以讓文字的高度置中*/
+    text-align: center;
+    background-color: darkslateblue;
+    color: #FFF;
+    font-weight: normal;
+}
+
+#center p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    /* 文字內間距，向內縮 */
+}
+
+#down {
+    clear: both;
+    /*解除浮動*/
+    /*解決：當上方有<div>使用float時，下方的<div>會重疊上去的問題*/
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #DDD;
+}
+
+#down h3 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
+    color: #666;
+    font-weight: normal;
+}

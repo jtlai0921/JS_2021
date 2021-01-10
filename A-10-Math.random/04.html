@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於亂數</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 160px;
+            padding-top: 200px;
+        }
+    </style>
+
+    <script>
+        // Math.random() 亂數功能  就會自動出現一長串隨機小數點數字
+        // 當亂數 乘上 5 之後
+        // 就會出現 0.001234... 到 4.987612... 整數加小數點之間的數字
+        var xxx = Math.random() * 5;
+
+        //使用 Math.floor() 無條件捨去小數 取整數功能
+        // 就會出現 0 到 4 之間的整數數字
+        var num = Math.floor(xxx);
+
+        document.write(num);
+		
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8">
+    <title>飛肯設計學苑</title>
+    <link rel="stylesheet" href="layout.css">
+
+    <script>
+        function changeDog_1() {
+            document.getElementById("myDog").src = "001.jpg";
+        }
+
+        function changeDog_2() {
+            document.getElementById("myDog").src = "002.jpg";
+        }
+
+        function changeDog_3() {
+            document.getElementById("myDog").src = "003.jpg";
+        }
+    </script>
+
+</head>
+
+<body>
+    <p></p>
+    <p>
+        <img src="001.jpg" width="980" id="myDog" 
+        onmouseover="changeDog_2()" onmouseout="changeDog_1()" onclick="changeDog_3()">
+    </p>
+    <p></p>
+    <p>Flycan.com</p>
+    <p>飛肯設計學苑</p>
+
+</body>
+
+</html>

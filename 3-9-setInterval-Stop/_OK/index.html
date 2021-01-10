@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>飛肯設計</title>
+
+    <style type="text/css">
+        body {
+            background-color: #CCC;
+        }
+        
+        #box {
+            width: 720px;
+            height: 730px;
+            margin: 0 auto;
+            box-shadow: 2px 5px 15px #333;
+            position: relative;
+            background-color: #FFF;
+        }
+        
+        #box img#pic {
+            position: absolute;
+            left: 110px;
+            top: 10px;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 500px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        
+        li {}
+        
+        li#play,
+        li#stop {
+            display: block;
+            width: 220px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 15px;
+            float: left;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            background-color: #EEE;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 2px 2px 5px #666666;
+            cursor: pointer;
+        }
+        
+        li#play {
+            float: left;
+        }
+        
+        li#stop {
+            float: right;
+        }
+        
+        li#play:hover,
+        li#stop:hover {
+            background-color: #DDD;
+            box-shadow: 0px 0px 2px #666666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <img src="images/pic1.jpg" width="500" height="700" id="pic">
+
+    </div>
+
+    <p>&nbsp;</p>
+    <ul>
+        <li id="play">PLAY</li>
+        <li id="stop">STOP</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <script src="flycan.js"></script>
+</body>
+
+</html>

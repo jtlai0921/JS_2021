@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>飛肯設計</title>
+
+    <style type="text/css">
+        body {
+            background-color: #CCC;
+        }
+        
+        #box {
+            width: 720px;
+            height: 730px;
+            margin: 0 auto;
+            box-shadow: 2px 5px 15px #333;
+            position: relative;
+            background-color: #FFF;
+        }
+        
+        #box img#pic {
+            position: absolute;
+            left: 110px;
+            top: 10px;
+        }
+        
+        #box img#right {
+            position: absolute;
+            right: 15px;
+            top: 650px;
+            cursor: pointer;
+        }
+        
+        #box img#left {
+            position: absolute;
+            right: 75px;
+            top: 650px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <img src="images/pic1.jpg" width="500" height="700" id="pic">
+
+        <img src="images/right.png" width="64" height="64" id="right">
+
+        <img src="images/left.png" width="64" height="64" id="left">
+
+    </div>
+
+    <script src="flycan.js"></script>
+</body>
+
+</html>

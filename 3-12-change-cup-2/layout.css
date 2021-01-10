@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #666666;
+    font-family: Verdana, Geneva, "微軟正黑體", sans-serif;
+}
+
+#box {
+    width: 620px;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+#box h1 {
+    margin-bottom: 15px;
+}
+
+#box p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#box img {
+    border: 10px solid #FFF;
+    box-shadow: 1px 8px 8px #333;
+    margin-bottom: 15px;
+}
+
+#box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#box li {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #DDD;
+    text-indent: -9999px;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 1px 5px 5px #333;
+    cursor: pointer; /*讓摸到的物件出現手指狀的滑鼠遊標*/
+}
+
+#box li span {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+#box li:hover {
+    margin-top: 3px;
+    box-shadow: 1px 2px 2px #333;
+}
+
+#box li.A {
+    background-color: #F90;
+}
+
+#box li.B {
+    background-color: #0F0;
+}
+
+#box li.C {
+    background-color: #06C;
+}
+
+#box li.D {
+    background-color: #F00;
+}
+
+#box li.E {
+    background-color: #FF0;
+}

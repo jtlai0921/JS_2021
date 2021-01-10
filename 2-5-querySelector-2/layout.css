@@ -1,0 +1,49 @@
+/* RESET 消除預設的間距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+    background-color: #EEE;
+}
+
+.head {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head img {
+    vertical-align: bottom;
+    /*消除圖片下間距的解決方法*/
+}
+
+.content {
+    width: 1200px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    margin: 0 auto;
+    /* margin: 上下  左右 可讓 <div> 置中 */
+    padding: 30px 300px;
+    /* padding: 上下  左右 */
+    text-align: left;
+    /*讓 <div> 內的文字和圖片靠左對齊*/
+}
+
+.content h1 {
+    letter-spacing: 2px;
+    /*每個文字之間的左右間距*/
+    padding-bottom: 16px;
+    /*文字的下面空一行*/
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-bottom: 16px;
+    /*文字的下面空一行*/
+}
