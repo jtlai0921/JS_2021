@@ -1,6 +1,7 @@
 window.onload = function () {
 
     function changeDog_1() {
+
         this.src = "001.jpg";
     }
 
@@ -10,6 +11,8 @@ window.onload = function () {
 
     function changeDog_3() {
         this.src = "003.jpg";
+        alert(this);
+        console.log(this);
     }
     var dog = document.getElementById("myDog");
     dog.onmouseover = changeDog_2;

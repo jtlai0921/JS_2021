@@ -24,9 +24,9 @@ function changePic_6() {
     big.src = "images/006.jpg";
 }
 
-document.getElementById("small1").onclick = changePic_1;
-document.getElementById("small2").onclick = changePic_2;
-document.getElementById("small3").onclick = changePic_3;
-document.getElementById("small4").onclick = changePic_4;
-document.getElementById("small5").onclick = changePic_5;
-document.getElementById("small6").onclick = changePic_6;
+document.getElementById("small1").addEventListener("click", changePic_1);
+document.getElementById("small2").addEventListener("click", changePic_2);
+document.getElementById("small3").addEventListener("click", changePic_3);
+document.getElementById("small4").addEventListener("click", changePic_4);
+document.getElementById("small5").addEventListener("click", changePic_5);
+document.getElementById("small6").addEventListener("click", changePic_6);
