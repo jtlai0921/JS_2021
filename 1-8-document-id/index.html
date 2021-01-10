@@ -6,7 +6,17 @@
     <title>飛肯設計學苑</title>
 
     <link rel="stylesheet" href="layout.css">
-
+    <script>
+        function a() {
+            document.getElementById("dog").src = "001.jpg";
+        }
+        function b() {
+            document.getElementById("dog").src = "002.jpg";
+        }
+        function c() {
+            document.getElementById("dog").src = "003.jpg";
+        }
+    </script>
 
 
 </head>
@@ -14,7 +24,7 @@
 <body>
     <p></p>
     <p>
-        <img src="001.jpg" width="980">
+        <img src="001.jpg" width="980" id="dog" onmouseover="b()" onmouseout="a()" onclick="c()">
     </p>
     <p></p>
     <p>Flycan.com</p>

@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 
     function changeDog_1() {
         this.src = "001.jpg";
@@ -11,8 +11,8 @@ window.onload = function() {
     function changeDog_3() {
         this.src = "003.jpg";
     }
-
-    document.getElementById("myDog").onmouseover = changeDog_2;
-    document.getElementById("myDog").onmouseout = changeDog_1;
-    document.getElementById("myDog").onclick = changeDog_3;
+    var dog = document.getElementById("mydog");
+    dog.onmouseover = changeDog_2;
+    dog.onmouseout = changeDog_1;
+    dog.onclick = changeDog_3;
 }
