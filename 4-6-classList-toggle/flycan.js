@@ -1,6 +1,7 @@
 function openBox() {
 
-    
+    var n = this.id.substring(6);
+    document.querySelector("#box-" + n).classList.toggle("box-open");
 
 }
 
