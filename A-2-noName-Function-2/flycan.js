@@ -1,19 +1,23 @@
-var content = document.querySelector("#content");
+// var content = document.querySelector("#content");
 
-function doBig() {
+// document.querySelector("#big").addEventListener("click", function () {
+//     content.style.fontSize = "30px";
+// });
+// document.querySelector("#mid").addEventListener("click", function () {
+//     content.style.fontSize = "16px";
+// });
+// document.querySelector("#small").addEventListener("click", function () {
+//     content.style.fontSize = "11px";
+// });
+var content = document.getElementById("content");
+
+document.getElementById("big").onclick = function () {
     content.style.fontSize = "30px";
-}
-
-function doMid() {
+};
+document.getElementByIdr("mid").onclick = function () {
     content.style.fontSize = "16px";
-}
-
-function doSmall() {
+};
+document.getElementById("small").onclick = function () {
     content.style.fontSize = "11px";
-}
-
-document.querySelector("#big").addEventListener("click", doBig);
-document.querySelector("#mid").addEventListener("click", doMid);
-document.querySelector("#small").addEventListener("click", doSmall);
-
+};
 
