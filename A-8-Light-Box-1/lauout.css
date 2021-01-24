@@ -94,12 +94,12 @@ div.black img {
     margin: auto;
     border: 10px solid #eee;
 }
-
 div.hide {
-    opacity: 0;
-}
-
-div.fadeIn {
     transition: 1s;
-    opacity: 1;
-}
+    margin-top: -1500px;
+ }
+ 
+ div.fadeIn {
+     transition: 1s;
+     margin-top: 0px;
+ }

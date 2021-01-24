@@ -43,15 +43,18 @@ function flycan_lightBox(e) {
     //兩者同時產生時，其中含有動畫的 class 的動畫就不會呈出現效果
     //因此我們使用 setTimeout() 讓有含有動畫的 class 慢一步出現
     //如此一來就可以讓 <div> 正常的產生含有動畫的 class 效果
-    setTimeout(function() {
+    setTimeout(function () {
         black_DIV.classList.add("fadeIn");
     }, 10);
 
 
     // parentNod 的功能就是指目前物件的父層
-    black_DIV.addEventListener("click", function() {
+    black_DIV.addEventListener("click", function () {
         //透過 black_DIV 的父層，就可以把自已移除掉
-        black_DIV.parentNode.removeChild(black_DIV);
+        black_DIV.classList.remove("fadeIn");
+        setTimeout(function () {
+            black_DIV.parentNode.removeChild(black_DIV);
+        }, 1000);
     })
 
     e.preventDefault();

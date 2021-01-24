@@ -96,10 +96,11 @@ div.black img {
 }
 
 div.hide {
-    opacity: 0;
+   transition: 1s;
+   margin-top: -1500px;
 }
 
 div.fadeIn {
     transition: 1s;
-    opacity: 1;
+    margin-top: 0px;
 }
